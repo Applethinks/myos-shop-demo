@@ -1,6 +1,1030 @@
-<!Doctype html>
-       <html>
-      <head>
-   </head>
-       <body>
-         </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Discover thoughtfully designed furniture and home decor at NESTORA."
+    >
+
+    <meta name="theme-color" content="#f7f5f0">
+
+    <title>NESTORA — Furniture & Home Living</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>Thoughtful design for everyday living.</p>
+        <a href="#products">Explore the collection ↗</a>
+    </div>
+
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <a class="logo" href="#home" aria-label="NESTORA homepage">
+            NESTORA<span>.</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#products">Shop</a>
+            <a href="#collections">Collections</a>
+            <a href="#about">Our Story</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <form class="search-form" id="search-form" role="search">
+                <label class="visually-hidden" for="product-search">
+                    Search products
+                </label>
+
+                <input
+                    type="search"
+                    id="product-search"
+                    placeholder="Search furniture..."
+                    autocomplete="off"
+                >
+
+                <button type="submit" aria-label="Search">
+                    ⌕
+                </button>
+            </form>
+
+            <button
+                class="cart-button"
+                id="cart-toggle"
+                type="button"
+                aria-label="Open shopping cart"
+                aria-controls="cart-panel"
+                aria-expanded="false"
+            >
+                Bag <span id="cart-count">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    FURNITURE FOR SLOWER LIVING
+                </p>
+
+                <h1>
+                    Make room for
+                    <em>better living.</em>
+                </h1>
+
+                <p class="hero-description">
+                    Thoughtfully chosen furniture and timeless pieces
+                    that make every corner feel like home.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a class="button button-dark" href="#products">
+                        Shop the collection <span>↗</span>
+                    </a>
+
+                    <a class="text-link" href="#about">
+                        Discover our story
+                    </a>
+
+                </div>
+
+                <div class="hero-note">
+                    <span class="note-mark">✳</span>
+                    Designed for comfort. Made for living.
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85"
+                    alt="Warm contemporary living room with comfortable furniture"
+                    fetchpriority="high"
+                >
+
+                <div class="image-caption">
+                    <span>THE ART OF HOME</span>
+                    <span>01 / 04</span>
+                </div>
+
+            </div>
+
+            <div class="hero-index">
+                <span>01</span>
+                <span class="index-line"></span>
+                <span>04</span>
+            </div>
+
+        </section>
+
+
+        <!-- Trust Highlights -->
+        <section class="trust-strip" aria-label="Our values">
+
+            <div class="trust-item">
+                <span class="trust-icon">✳</span>
+                <div>
+                    <h3>Thoughtful design</h3>
+                    <p>Made to complement your space.</p>
+                </div>
+            </div>
+
+            <div class="trust-item">
+                <span class="trust-icon">◇</span>
+                <div>
+                    <h3>Timeless pieces</h3>
+                    <p>Styles beyond passing trends.</p>
+                </div>
+            </div>
+
+            <div class="trust-item">
+                <span class="trust-icon">⌂</span>
+                <div>
+                    <h3>Everyday comfort</h3>
+                    <p>Feel-good living starts at home.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Collections -->
+        <section class="collections section-padding" id="collections">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">FIND YOUR FEEL</p>
+                    <h2>Spaces with <em>character.</em></h2>
+                </div>
+
+                <a class="text-link" href="#products">
+                    View all products ↗
+                </a>
+
+            </div>
+
+            <div class="collection-grid">
+
+                <a
+                    class="collection-card collection-living"
+                    href="#products"
+                    data-category-link="Living Room"
+                >
+                    <img
+                        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80"
+                        alt="Comfortable living room furniture"
+                        loading="lazy"
+                    >
+
+                    <div class="collection-overlay">
+                        <span>01 / RELAX</span>
+                        <h3>Living Room</h3>
+                        <span class="collection-arrow">↗</span>
+                    </div>
+                </a>
+
+                <a
+                    class="collection-card collection-bedroom"
+                    href="#products"
+                    data-category-link="Bedroom"
+                >
+                    <img
+                        src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80"
+                        alt="Calm and inviting bedroom interior"
+                        loading="lazy"
+                    >
+
+                    <div class="collection-overlay">
+                        <span>02 / UNWIND</span>
+                        <h3>Bedroom</h3>
+                        <span class="collection-arrow">↗</span>
+                    </div>
+                </a>
+
+                <a
+                    class="collection-card collection-workspace"
+                    href="#products"
+                    data-category-link="Workspace"
+                >
+                    <img
+                        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+                        alt="Modern workspace with a desk and seating"
+                        loading="lazy"
+                    >
+
+                    <div class="collection-overlay">
+                        <span>03 / CREATE</span>
+                        <h3>Workspace</h3>
+                        <span class="collection-arrow">↗</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Products -->
+        <section class="products-section section-padding" id="products">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">THE NESTORA EDIT</p>
+                    <h2>Pieces you'll <em>come home to.</em></h2>
+                    <p class="section-description">
+                        Considered designs for the way you live.
+                    </p>
+                </div>
+
+                <span class="product-count" id="product-count">
+                    8 pieces
+                </span>
+
+            </div>
+
+
+            <!-- Product Search and Filters -->
+            <div class="product-toolbar">
+
+                <div class="category-filters" aria-label="Filter products">
+
+                    <button
+                        class="filter-button active"
+                        type="button"
+                        data-category="All"
+                        aria-pressed="true"
+                    >
+                        All pieces
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        type="button"
+                        data-category="Living Room"
+                        aria-pressed="false"
+                    >
+                        Living room
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        type="button"
+                        data-category="Bedroom"
+                        aria-pressed="false"
+                    >
+                        Bedroom
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        type="button"
+                        data-category="Workspace"
+                        aria-pressed="false"
+                    >
+                        Workspace
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        type="button"
+                        data-category="Decor"
+                        aria-pressed="false"
+                    >
+                        Decor
+                    </button>
+
+                </div>
+
+                <label class="sort-control" for="sort-products">
+                    Sort:
+                    <select id="sort-products">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: low to high</option>
+                        <option value="price-high">Price: high to low</option>
+                        <option value="name">Name: A to Z</option>
+                    </select>
+                </label>
+
+            </div>
+
+
+            <!-- Product Grid -->
+            <div class="product-grid" id="product-grid">
+
+                <!-- Product 1 -->
+                <article
+                    class="product-card"
+                    data-id="1"
+                    data-name="Luna Lounge Chair"
+                    data-price="12999"
+                    data-category="Living Room"
+                >
+
+                    <div class="product-image-wrap">
+
+                        <span class="product-badge">BESTSELLER</span>
+
+                        <button
+                            class="wishlist-button"
+                            type="button"
+                            aria-label="Add Luna Lounge Chair to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=800&q=80"
+                            alt="Contemporary lounge chair"
+                            loading="lazy"
+                        >
+
+                        <button
+                            class="quick-add"
+                            type="button"
+                            data-add-to-cart
+                        >
+                            Add to bag +
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <h3>Luna Lounge Chair</h3>
+                            <p>Solid wood · Natural finish</p>
+                        </div>
+
+                        <span class="product-price">₹12,999</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Product 2 -->
+                <article
+                    class="product-card"
+                    data-id="2"
+                    data-name="Forma Coffee Table"
+                    data-price="8499"
+                    data-category="Living Room"
+                >
+
+                    <div class="product-image-wrap">
+
+                        <button
+                            class="wishlist-button"
+                            type="button"
+                            aria-label="Add Forma Coffee Table to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=800&q=80"
+                            alt="Minimal wooden coffee table"
+                            loading="lazy"
+                        >
+
+                        <button
+                            class="quick-add"
+                            type="button"
+                            data-add-to-cart
+                        >
+                            Add to bag +
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <h3>Forma Coffee Table</h3>
+                            <p>Oak-inspired · Minimal design</p>
+                        </div>
+
+                        <span class="product-price">₹8,499</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Product 3 -->
+                <article
+                    class="product-card"
+                    data-id="3"
+                    data-name="Cloud Three-Seater Sofa"
+                    data-price="32999"
+                    data-category="Living Room"
+                >
+
+                    <div class="product-image-wrap">
+
+                        <span class="product-badge">NEW ARRIVAL</span>
+
+                        <button
+                            class="wishlist-button"
+                            type="button"
+                            aria-label="Add Cloud Three-Seater Sofa to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80"
+                            alt="Modern sofa in a warm living room"
+                            loading="lazy"
+                        >
+
+                        <button
+                            class="quick-add"
+                            type="button"
+                            data-add-to-cart
+                        >
+                            Add to bag +
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <h3>Cloud Three-Seater Sofa</h3>
+                            <p>Soft upholstery · Sand</p>
+                        </div>
+
+                        <span class="product-price">₹32,999</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Product 4 -->
+                <article
+                    class="product-card"
+                    data-id="4"
+                    data-name="Arc Floor Lamp"
+                    data-price="4999"
+                    data-category="Decor"
+                >
+
+                    <div class="product-image-wrap">
+
+                        <button
+                            class="wishlist-button"
+                            type="button"
+                            aria-label="Add Arc Floor Lamp to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80"
+                            alt="Modern floor lamp for a cozy interior"
+                            loading="lazy"
+                        >
+
+                        <button
+                            class="quick-add"
+                            type="button"
+                            data-add-to-cart
+                        >
+                            Add to bag +
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <h3>Arc Floor Lamp</h3>
+                            <p>Warm light · Matte finish</p>
+                        </div>
+
+                        <span class="product-price">₹4,999</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Product 5 -->
+                <article
+                    class="product-card"
+                    data-id="5"
+                    data-name="Haven Bedside Table"
+                    data-price="5999"
+                    data-category="Bedroom"
+                >
+
+                    <div class="product-image-wrap">
+
+                        <button
+                            class="wishlist-button"
+                            type="button"
+                            aria-label="Add Haven Bedside Table to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1499933374294-4584851497cc?auto=format&fit=crop&w=800&q=80"
+                            alt="Small wooden side table"
+                            loading="lazy"
+                        >
+
+                        <button
+                            class="quick-add"
+                            type="button"
+                            data-add-to-cart
+                        >
+                            Add to bag +
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <h3>Haven Bedside Table</h3>
+                            <p>Compact storage · Natural tone</p>
+                        </div>
+
+                        <span class="product-price">₹5,999</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Product 6 -->
+                <article
+                    class="product-card"
+                    data-id="6"
+                    data-name="Studio Work Desk"
+                    data-price="14999"
+                    data-category="Workspace"
+                >
+
+                    <div class="product-image-wrap">
+
+                        <span class="product-badge">POPULAR</span>
+
+                        <button
+                            class="wishlist-button"
+                            type="button"
+                            aria-label="Add Studio Work Desk to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&q=80"
+                            alt="Wooden desk for a home office"
+                            loading="lazy"
+                        >
+
+                        <button
+                            class="quick-add"
+                            type="button"
+                            data-add-to-cart
+                        >
+                            Add to bag +
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <h3>Haven Bedside Table</h3>
+                            <p>Compact storage · Natural tone</p>
+                        </div>
+
+                        <span class="product-price">₹5,999</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Product 6 -->
+                <article
+                    class="product-card"
+                    data-id="6"
+                    data-name="Studio Work Desk"
+                    data-price="14999"
+                    data-category="Workspace"
+                >
+
+                    <div class="product-image-wrap">
+
+                        <span class="product-badge">POPULAR</span>
+
+                        <button
+                            class="wishlist-button"
+                            type="button"
+                            aria-label="Add Studio Work Desk to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&q=80"
+                            alt="Wooden desk for a home office"
+                            loading="lazy"
+                        >
+
+                        <button
+                            class="quick-add"
+                            type="button"
+                            data-add-to-cart
+                        >
+                            Add to bag +
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <h3>Studio Work Desk</h3>
+                            <p>Clean lines · Functional design</p>
+                        </div>
+
+                        <span class="product-price">₹14,999</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Product 7 -->
+                <article
+                    class="product-card"
+                    data-id="7"
+                    data-name="Sora Accent Chair"
+                    data-price="9999"
+                    data-category="Living Room"
+                >
+
+                    <div class="product-image-wrap">
+
+                        <button
+                            class="wishlist-button"
+                            type="button"
+                            aria-label="Add Sora Accent Chair to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1598300053653-1d2d8d4f5e3c?auto=format&fit=crop&w=800&q=80"
+                            alt="Accent chair in a contemporary interior"
+                            loading="lazy"
+                        >
+
+                        <button
+                            class="quick-add"
+                            type="button"
+                            data-add-to-cart
+                        >
+                            Add to bag +
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <h3>Sora Accent Chair</h3>
+                            <p>Comfortable seating · Beige</p>
+                        </div>
+
+                        <span class="product-price">₹9,999</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Product 8 -->
+                <article
+                    class="product-card"
+                    data-id="8"
+                    data-name="Terra Ceramic Vase"
+                    data-price="1499"
+                    data-category="Decor"
+                >
+
+                    <div class="product-image-wrap">
+
+                        <span class="product-badge">SMALL DETAILS</span>
+
+                        <button
+                            class="wishlist-button"
+                            type="button"
+                            aria-label="Add Terra Ceramic Vase to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=800&q=80"
+                            alt="Decorative ceramic vase"
+                            loading="lazy"
+                        >
+
+                        <button
+                            class="quick-add"
+                            type="button"
+                            data-add-to-cart
+                        >
+                            Add to bag +
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <h3>Terra Ceramic Vase</h3>
+                            <p>Decorative accent · Earth tones</p>
+                        </div>
+
+                        <span class="product-price">₹1,499</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <p class="empty-products" id="empty-products" hidden>
+                No products found. Try another search or category.
+            </p>
+
+            <div class="products-footer">
+                <p>Good spaces are built one piece at a time.</p>
+                <a class="button button-outline" href="#products">
+                    Explore all pieces ↗
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- Brand Story -->
+        <section class="story-section section-padding" id="about">
+
+            <div class="story-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85"
+                    alt="Warm, carefully styled home interior"
+                    loading="lazy"
+                >
+
+                <div class="story-stamp">
+                    <span>LIVE</span>
+                    <span>WELL</span>
+                    <span>DAILY</span>
+                </div>
+
+            </div>
+
+            <div class="story-content">
+
+                <p class="eyebrow">A LITTLE ABOUT US</p>
+
+                <h2>
+                    Home isn't a place.
+                    <em>It's a feeling.</em>
+                </h2>
+
+                <p>
+                    At NESTORA, we believe the things around us should
+                    make everyday life feel a little more meaningful.
+                </p>
+
+                <p>
+                    From quiet mornings at your favorite chair to long
+                    evenings around the coffee table, we celebrate the
+                    little moments that turn a space into your own.
+                </p>
+
+                <a class="button button-dark" href="#products">
+                    Find your next favorite <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Newsletter -->
+        <section class="newsletter-section section-padding">
+
+            <div class="newsletter-content">
+
+                <p class="eyebrow">A NOTE FROM NESTORA</p>
+
+                <h2>
+                    Make yourself <em>at home.</em>
+                </h2>
+
+                <p>
+                    Get design inspiration, new arrivals and thoughtful
+                    ideas for your space.
+                </p>
+
+                <form class="newsletter-form" id="newsletter-form">
+
+                    <label class="visually-hidden" for="newsletter-email">
+                        Your email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="newsletter-email"
+                        placeholder="Your email address"
+                        required
+                    >
+
+                    <button type="submit">
+                        Join us ↗
+                    </button>
+
+                </form>
+
+                <p class="form-message" id="newsletter-message" aria-live="polite"></p>
+
+                <small>
+                    Demo only. This form doesn't subscribe you to a real mailing list.
+                </small>
+
+            </div>
+
+            <div class="newsletter-decoration" aria-hidden="true">
+                <span>n.</span>
+            </div>
+
+        </section>
+
+
+        <!-- Shopping Cart Panel -->
+        <aside
+            class="cart-panel"
+            id="cart-panel"
+            aria-label="Shopping cart"
+            aria-hidden="true"
+            inert
+        >
+
+            <div class="cart-header">
+
+                <div>
+                    <p class="eyebrow">YOUR SELECTION</p>
+                    <h2>Your bag <span id="cart-heading-count">(0)</span></h2>
+                </div>
+
+                <button
+                    type="button"
+                    class="cart-close"
+                    id="cart-close"
+                    aria-label="Close shopping cart"
+                >
+                    ×
+                </button>
+
+            </div>
+
+            <div class="cart-items" id="cart-items">
+                <p class="cart-empty">
+                    Your bag is waiting for something lovely.
+                </p>
+            </div>
+
+            <div class="cart-footer">
+
+                <div class="cart-subtotal">
+                    <span>Subtotal</span>
+                    <strong id="cart-subtotal">₹0</strong>
+                </div>
+
+                <p class="cart-disclaimer">
+                    Shipping and taxes are not included.
+                </p>
+
+                <button
+                    type="button"
+                    class="button button-dark checkout-button"
+                    id="checkout-button"
+                >
+                    Continue to checkout ↗
+                </button>
+
+                <p class="demo-notice">
+                    Demo store — no real orders or payments.
+                </p>
+
+            </div>
+
+        </aside>
+
+        <button
+            class="cart-backdrop"
+            id="cart-backdrop"
+            type="button"
+            aria-label="Close shopping cart"
+            tabindex="-1"
+            hidden
+        ></button>
+
+        <p
+            class="live-message"
+            id="live-message"
+            role="status"
+            aria-live="polite"
+        ></p>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a class="logo footer-logo" href="#home">
+                    NESTORA<span>.</span>
+                </a>
+
+                <p>
+                    Thoughtful furniture.
+                    Timeless living.
+                    A little more home.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="#products">Shop all</a>
+                <a href="#collections">Collections</a>
+                <a href="#about">Our story</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Help</h3>
+                <a href="mailto:hello@nestora.example">Contact us</a>
+                <a href="#about">About NESTORA</a>
+                <a href="#home">Back to top ↑</a>
+            </div>
+
+            <div class="footer-column footer-note">
+                <h3>Made for living</h3>
+                <p>
+                    Spaces that feel like you.
+                    Pieces that feel like home.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="current-year">2026</span> NESTORA.
+                Fictional brand created for a MYOS demo.
+            </p>
+
+            <p>Designed with care. Built for everyday living.</p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
